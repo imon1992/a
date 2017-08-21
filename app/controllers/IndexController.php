@@ -5,7 +5,7 @@ use TinyURL\Repository\Link\LinkRepositoryInterface;
 class IndexController extends BaseController
 {
     protected $linkRepo;
-        
+
 
     public function __construct(LinkRepositoryInterface $linkRepo)
     {

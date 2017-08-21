@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', 'IndexController@showIndex');
+Route::get('/url', 'IndexController@showIndex');
+Route::get('/', 'HomeController@showHome');
 Route::post('/make-url', 'IndexController@postUrl');
 Route::get('/{id}', 'IndexController@getRedirect');
 Route::controller('auth', 'AuthController');
-

@@ -5,17 +5,17 @@ class LinkRepository
 {
     public function create($url)
     {
-       $link = new \Link();
+        $link = new \Link();
         $link->url = $url;
-       $link->save();
-       return $link->id;
+        $link->user_id = \Auth::id();
+        $link->save();
+        return $link->id;
     }
 
     public function find($id)
     {
         $link = \Link::find($id);
-        if (!$link)
-        {
+        if (!$link) {
             return null;
         }
 

@@ -1,7 +1,5 @@
-<html>
-<body>
-<p>Short Link: <a href="{{$link}}">{{$link}}</a></p>
+@extends('layout')
 
-
-</body>
-</html>
+@section('content')
+    <p>Short Link: <a href="{{$link}}">{{$link}}</a></p>
+@stop
